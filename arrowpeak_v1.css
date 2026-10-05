@@ -1,0 +1,279 @@
+/*
+  ARROWPEAK — Wolvden Profile CSS v1
+  Original layout created for personal use.
+  Vibe: clean mountain lodge / stone / sage / charcoal
+*/
+
+/* ---------- palette ---------- */
+:root {
+  --ap-ink: #262824;
+  --ap-charcoal: #30332f;
+  --ap-deep: #1f231f;
+  --ap-sage: #7d8877;
+  --ap-sage-dark: #606b5c;
+  --ap-moss: #4f5a49;
+  --ap-stone: #ddd9d0;
+  --ap-cream: #f1eee7;
+  --ap-taupe: #aaa297;
+  --ap-line: #8f9188;
+}
+
+/* ---------- page ---------- */
+body {
+  background-color: #242924 !important;
+  background-image:
+    linear-gradient(rgba(23, 27, 23, .60), rgba(23, 27, 23, .72)),
+    radial-gradient(circle at 20% 10%, rgba(125, 136, 119, .28), transparent 38%),
+    radial-gradient(circle at 80% 25%, rgba(170, 162, 151, .16), transparent 34%) !important;
+  background-attachment: fixed !important;
+  color: var(--ap-ink) !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+}
+
+/* Keep the site readable and contained */
+#main, main, .container, .container-fluid {
+  color: var(--ap-ink);
+}
+
+/* ---------- top navigation ---------- */
+.navbar,
+#header .navbar,
+nav.navbar {
+  background: rgba(26, 30, 26, .96) !important;
+  border: 0 !important;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .28) !important;
+}
+
+.navbar a,
+.navbar .nav-link,
+.navbar-brand {
+  color: #e8e5dd !important;
+  letter-spacing: .06em;
+}
+
+.navbar a:hover,
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* ---------- breadcrumb ---------- */
+.breadcrumb {
+  background: rgba(232, 229, 221, .93) !important;
+  border: 1px solid rgba(255,255,255,.5) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 3px 12px rgba(0,0,0,.16) !important;
+  color: var(--ap-ink) !important;
+}
+
+.breadcrumb a { color: var(--ap-moss) !important; }
+
+/* ---------- main cards / panels ---------- */
+.card,
+.panel,
+.table,
+.alert,
+.list-group-item,
+#main .card {
+  border-color: var(--ap-line) !important;
+}
+
+.card,
+.panel,
+.list-group-item {
+  background: rgba(241, 238, 231, .95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 13px rgba(0, 0, 0, .13) !important;
+}
+
+.card-header,
+.panel-heading,
+.table thead th,
+.table-dark th,
+.bg-dark {
+  background: var(--ap-charcoal) !important;
+  color: #f3f0e9 !important;
+  border-color: var(--ap-charcoal) !important;
+  letter-spacing: .025em;
+}
+
+.card-header:first-child { border-radius: 11px 11px 0 0 !important; }
+
+/* ---------- tables ---------- */
+.table {
+  background: rgba(241, 238, 231, .96) !important;
+  color: var(--ap-ink) !important;
+}
+
+.table td,
+.table th {
+  border-color: rgba(96, 107, 92, .25) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd),
+.table tbody tr:nth-of-type(odd) {
+  background-color: rgba(125, 136, 119, .10) !important;
+}
+
+/* Left/label cells commonly used on profile info */
+.table th,
+.table td:first-child {
+  color: var(--ap-ink);
+}
+
+/* ---------- sidebar ---------- */
+#sidebar .card,
+.sidebar .card,
+aside .card {
+  background: rgba(221, 217, 208, .96) !important;
+  border: 1px solid var(--ap-line) !important;
+  border-radius: 12px !important;
+}
+
+#sidebar .card-header,
+.sidebar .card-header,
+aside .card-header {
+  background: var(--ap-sage-dark) !important;
+  color: #fff !important;
+}
+
+/* ---------- links ---------- */
+a {
+  color: #4f6250;
+}
+
+a:hover {
+  color: #2f3e31;
+}
+
+/* ---------- buttons ---------- */
+.btn,
+button,
+input[type="submit"] {
+  border-radius: 18px !important;
+  border-width: 1px !important;
+  box-shadow: none !important;
+}
+
+.btn-primary,
+.btn-success {
+  background: var(--ap-sage-dark) !important;
+  border-color: var(--ap-sage-dark) !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  background: var(--ap-moss) !important;
+  border-color: var(--ap-moss) !important;
+}
+
+.btn-secondary,
+.btn-light {
+  background: var(--ap-stone) !important;
+  border-color: var(--ap-taupe) !important;
+  color: var(--ap-ink) !important;
+}
+
+/* ---------- headings ---------- */
+h1, h2, h3, h4, h5, h6,
+.card-title {
+  font-family: Georgia, "Times New Roman", serif !important;
+  color: var(--ap-ink);
+}
+
+h1, h2 {
+  letter-spacing: .045em;
+}
+
+/* ---------- forms ---------- */
+.form-control,
+.custom-select,
+select,
+textarea,
+input[type="text"] {
+  background: #f7f4ee !important;
+  color: var(--ap-ink) !important;
+  border-color: var(--ap-taupe) !important;
+  border-radius: 8px !important;
+}
+
+/* ---------- progress bars ---------- */
+.progress {
+  background: #d5d1c8 !important;
+  border-radius: 20px !important;
+}
+
+.progress-bar {
+  background: var(--ap-sage-dark) !important;
+}
+
+/* ---------- images / avatars ---------- */
+img.rounded,
+.rounded img,
+.card img {
+  border-radius: 9px;
+}
+
+/* ---------- custom Arrowpeak profile HTML ---------- */
+.arrowpeak-hero {
+  max-width: 900px;
+  margin: 0 auto 22px auto;
+  padding: 34px 28px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(48,51,47,.96), rgba(79,90,73,.94));
+  color: #f3f0e9;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 16px;
+  box-shadow: 0 7px 22px rgba(0,0,0,.22);
+}
+
+.arrowpeak-hero h1 {
+  margin: 0 0 7px 0;
+  color: #fff !important;
+  font-size: 2.15rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.arrowpeak-hero .tagline {
+  margin: 0;
+  color: #dedbd3;
+  font-style: italic;
+  letter-spacing: .05em;
+}
+
+.arrowpeak-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 900px;
+  margin: 0 auto 22px auto;
+}
+
+.arrowpeak-box {
+  padding: 18px 20px;
+  background: rgba(241,238,231,.96);
+  border: 1px solid var(--ap-line);
+  border-radius: 12px;
+  box-shadow: 0 4px 13px rgba(0,0,0,.12);
+}
+
+.arrowpeak-box h3 {
+  margin-top: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(96,107,92,.32);
+  color: var(--ap-moss) !important;
+  letter-spacing: .06em;
+}
+
+.arrowpeak-small {
+  color: #6b6b65;
+  font-size: .92em;
+}
+
+@media (max-width: 760px) {
+  .arrowpeak-grid { grid-template-columns: 1fr; }
+  .arrowpeak-hero { padding: 26px 18px; }
+  .arrowpeak-hero h1 { font-size: 1.65rem; }
+}
